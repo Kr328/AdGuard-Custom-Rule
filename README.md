@@ -27,6 +27,7 @@
 * **链接** <https://raw.githubusercontent.com/Kr328/AdGuard-Custom-Rule/master/rule/bilibili.txt>
 * **测试版本** 5.39.8-preview
 * **功能**
+  * 去除评论区广告
   * 去除首页卡片广告
   * 允许缓存任意动画
 
