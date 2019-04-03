@@ -5,4 +5,4 @@
 
 ||api.bilibili.com/pgc/view/app/season$replace=/"allow_download":0/"allow_download":1/s
 ||app.bilibili.com/x/v2/feed/index$replace=/\{"card_type":"cm_v2".+?"type":"dislike"}]}\,?//s
-
+||cm.bilibili.com/cm/api/fees/wise
