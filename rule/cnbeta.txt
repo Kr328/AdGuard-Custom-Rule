@@ -1,0 +1,7 @@
+! Title: CNBeta 移动端增强
+! Description: 重定向 桌面版网站 到 移动版
+! Version: 1.0.0.0
+! Expires: 2 days
+
+||hot.cnbeta.com/articles$replace=/.*/<html><script>window.location.replace("https:\/\/m.cnbeta.com\/view\/" + window.location.pathname.split("\/")[3]);<\/script><\/html>/s
+||www.cnbeta.com/articles$replace=/.*/<html><script>window.location.replace("https:\/\/m.cnbeta.com\/view\/" + window.location.pathname.split("\/")[3]);<\/script><\/html>/s
