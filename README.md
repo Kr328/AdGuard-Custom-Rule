@@ -14,11 +14,19 @@
   - 填入链接
   - **务必选择受信任的过滤器**
 
+  
+
+  
+
 ### #1 CNBeta 移动端增强
 
 * **链接** <https://raw.githubusercontent.com/Kr328/AdGuard-Custom-Rule/master/rule/cnbeta.txt>
 * **功能**
   * 重定向 **桌面版网站** 到 **移动版网站** 
+
+  
+
+​     
 
 ### #2 Bilibili 移动客户端增强
 
