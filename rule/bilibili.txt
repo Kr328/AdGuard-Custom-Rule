@@ -1,6 +1,6 @@
 ! Title: Bilibili 移动端 App 增强
 ! Description: 过滤首页卡片广告 ,允许版权动画下载
-! Version: 1.0.0.0
+! Version: 1.0.0.1
 ! Expires: 7 days
 
 ! Note: AdGuard *MUST* run on VPN mode
