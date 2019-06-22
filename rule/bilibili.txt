@@ -11,6 +11,11 @@
 ||app.bilibili.com/x/resource/show/tab$replace=/\,?{"id":203.+"uri":"bilibili:\/\/mall\/home\/".+?}//s
 ||app.bilibili.com/x/resource/show/tab$replace=/\,?{"id":197.+"uri":"bilibili:\/\/game_center\/home".+?}//s
 
+! Block sidebar elements
+||app.bilibili.com/x/resource/sidebar$replace=/{"id":210.+?"param":"bilibili:\/\/user_center\/teenagersmode".+?}\,?//s
+||app.bilibili.com/x/resource/sidebar$replace=/{"id":212.+?"param":"bilibili:\/\/mall\/order\/list.+?}\,?//s
+||app.bilibili.com/x/resource/sidebar$replace=/{"id":213.+?"param":"bilibili:\/\/mall\/mine.+?}\,?//s
+
 ! Block feed ads
 ||app.bilibili.com/x/v2/feed/index$replace=/{"id":0+.+?"cm_mark":[1-9].+?},{"id":/{"id":/s
 ||app.bilibili.com/x/v2/feed/index$replace=/{"card_type":"cm_v2".+?}\,{"card_type"/{"card_type"/s
