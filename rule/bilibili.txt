@@ -1,5 +1,5 @@
 ! Title: Bilibili 移动端 App 增强
-! Description: 过滤首页卡片广告 ,允许版权动画下载
+! Description: 过滤首页卡片广告, 利用首页云控修改UI, 允许版权动画下载
 ! Version: 1.0.0.2
 ! Expires: 7 days
 
