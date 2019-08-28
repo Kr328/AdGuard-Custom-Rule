@@ -11,8 +11,8 @@
 ||app.bilibili.com/x/v2/splash/list$replace=/"max_time":[0-9]+/"max_time":0/s
 
 ! Block tab elements
-||app.bilibili.com/x/resource/show/tab$replace=/{"id"[^{}]+?"uri":"bilibili:\/\/game_center\/home".+?}\,{"id"/{"id"/s
-||app.bilibili.com/x/resource/show/tab$replace=/{"id"[^{}]+?"uri":"bilibili:\/\/mall\/home".+?}\,{"id"/{"id"/s
+||app.bilibili.com/x/resource/show/tab$replace=/{"id"[^{}]+?"uri":"bilibili:\/\/game_center\/home\/?".+?}\,{"id"/{"id"/s
+||app.bilibili.com/x/resource/show/tab$replace=/{"id"[^{}]+?"uri":"bilibili:\/\/mall\/home\/?"[^\[]+?}\]//s
 
 ! Block sidebar elements
 ||app.bilibili.com/x/resource/sidebar$replace=/{"id":210.+?"param":"bilibili:\/\/user_center\/teenagersmode".+?}\,?//s
