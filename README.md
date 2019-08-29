@@ -19,7 +19,7 @@
 
 * **链接** <https://raw.githubusercontent.com/Kr328/AdGuard-Custom-Rule/master/rule/bilibili.txt>
 
-* **测试版本** 5.43.1
+* **测试版本** 5.46.0
 
 * **功能**
  
