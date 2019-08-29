@@ -5,7 +5,33 @@
 
 ! Note: AdGuard *MUST* run on VPN mode
 
-! Target Bilibili Version 5.43.1
+! Target Bilibili Version 5.46.0
+
+! ----------------------- New API Domain --------------------------
+
+! Block splash
+||app.biliapi.com/x/v2/splash/list$replace=/"max_time":[0-9]+/"max_time":0/s
+
+! Block tab elements
+||app.biliapi.com/x/resource/show/tab$replace=/{"id"[^{}]+?"uri":"bilibili:\/\/game_center\/home\/?".+?}\,{"id"/{"id"/s
+||app.biliapi.com/x/resource/show/tab$replace=/\,?{"id"[^{}]+?"uri":"bilibili:\/\/mall\/home\/?"[^\[]+?}\]/]/s
+
+! Block sidebar elements
+||app.biliapi.com/x/resource/sidebar$replace=/{"id":210.+?"param":"bilibili:\/\/user_center\/teenagersmode".+?}\,?//s
+||app.biliapi.com/x/resource/sidebar$replace=/{"id":212.+?"param":"bilibili:\/\/mall\/order\/list.+?}\,?//s
+||app.biliapi.com/x/resource/sidebar$replace=/{"id":213.+?"param":"bilibili:\/\/mall\/mine.+?}\,?//s
+
+! Block feed ads
+||app.biliapi.com/x/v2/feed/index$replace=/{"id".+?"cm_mark":[1-9].+?},{"id":/{"id":/s
+||app.biliapi.com/x/v2/feed/index$replace=/{"card_type":"cm_v2".+?}\,{"card_type"/{"card_type"/s
+
+! Block relates page ads
+||app.biliapi.com/x/v2/view$replace=/"relates":[{.+?cm_mark":[1-9].+?}\,{"aid"/"relates":[{"aid"/s
+
+! Allow download any animation
+||api.biliapi.com/pgc/view/app/season$replace=/"allow_download":0/"allow_download":1/s
+
+! ----------------------- Old API Domain --------------------------
 
 ! Block splash
 ||app.bilibili.com/x/v2/splash/list$replace=/"max_time":[0-9]+/"max_time":0/s
