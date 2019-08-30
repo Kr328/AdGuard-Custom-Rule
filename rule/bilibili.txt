@@ -28,9 +28,6 @@
 ! Block relates page ads
 ||app.biliapi.com/x/v2/view$replace=/"relates":[{.+?cm_mark":[1-9].+?}\,{"aid"/"relates":[{"aid"/s
 
-! Allow download any animation
-||api.biliapi.com/pgc/view/app/season$replace=/"allow_download":0/"allow_download":1/s
-
 ! ----------------------- Old API Domain --------------------------
 
 ! Block splash
