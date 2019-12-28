@@ -51,3 +51,4 @@
 
 ! Allow download any animation
 ||api.bilibili.com/pgc/view/app/season$replace=/"allow_download":0/"allow_download":1/s
+||api.bilibili.com/pgc/global/app/season$replace=/"allow_download":0/"allow_download":1/s
